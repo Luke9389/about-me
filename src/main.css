@@ -1,35 +1,51 @@
 body{
     background-color: rgb(123, 188, 193);
+    font-family: 'EB Garamond', serif;
 }
 
 #profpic{
    float: left;
     
     object-fit: cover;
-    object-position: 0, 20px;
+    object-position: 0, 0;
 
-    height: 190px;
+    height: 180px;
     width: 150px;
     
-    margin-right: 20px;
+    padding-right: 20px;
+
+    border: 5px;
+    border-color:pink;
 }
 
 h1{
     color: white;
-    font-family: 'Courgette', cursive;
-    margin-left: 30px;
+    font-family: 'Lobster', cursive;
+    padding-left: 30px;
     
     font-size: 40px;
+}
+
+h2{
+    color: white;
+    font-family: 'Lobster',cursive;
+}
+
+p,ul,ol{
+    padding: 0px, 10px;
+    background-color: white;
 }
 .intro{
     font-size: 30px;
     line-height: 2.0;
-    color: white;
+    color: black;
 }
 
 section{
-    margin-left: 30px;
+    padding-left: 30px;
 }
+
+
 
 
 
