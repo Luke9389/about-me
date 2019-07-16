@@ -4,15 +4,10 @@ body {
     font-size: 18px;
 }
 
-#profpic {
-    float: left;
-    margin-right: 20px;
-    object-fit: cover;
-    object-position: 50% 35%;
-    height: 180px;
-    width: 150px;
-    padding: 10px;
-    border: 3px solid rgb(0, 0, 0);
+nav{
+    color: white;
+    font-family: 'Lobster', cursive;
+
 }
 
 h1 {
@@ -26,13 +21,6 @@ h2 {
     color: white;
     font-family: 'Lobster', cursive;
     margin: 0px;
-}
-
-#intro>p {
-    font-size: 30px;
-    line-height: 2.07;
-    color: rgb(0, 0, 0);
-    background-color: white;
 }
 
 .box {
@@ -66,29 +54,6 @@ ol {
     border-radius: 0 10px 0 0;
 }
 
-.zero {
-    color: red;
-}
-
-.one {
-    color: orange;
-}
-
-.two {
-    color: yellow;
-}
-
-.three {
-    color: rgb(37, 240, 37);
-}
-
 .hidden {
     visibility: hidden;
-}
-
-#numberScore {
-    padding: 4px;
-    background-color: rgb(44, 69, 70);
-    border: 3px solid black;
-    font-size: 25px;
 }
