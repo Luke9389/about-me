@@ -51,16 +51,16 @@ quizButton.onclick = function() {
     //Question Two
     const food = prompt('Is it true that I dispise sushi?');
     if(!isYes(food)) {
-        if(isYes(food) === 'empty') {
-            alert('You cannot leave a prompt blank! Shame on you!');
-            return;
-        }
-        else if(isYes(birthPlace) === 'error') {
-            alert('You must respond using yes, y, no, n [not case sensitive]');
-            return;
-        }
         score += 1;
 
+    }
+    else if(isYes(food) === 'empty') {
+        alert('You cannot leave a prompt blank! Shame on you!');
+        return;
+    }
+    else if(isYes(food) === 'error') {
+        alert('You must respond using yes, y, no, n [not case sensitive]');
+        return;
     }
 
     //Question Three
@@ -70,7 +70,7 @@ quizButton.onclick = function() {
             alert('You cannot leave a prompt blank! Shame on you!');
             return;
         }
-        else if(isYes(birthPlace) === 'error') {
+        else if(isYes(cat) === 'error') {
             alert('You must respond using yes, y, no, n [not case sensitive]');
             return;
         }
