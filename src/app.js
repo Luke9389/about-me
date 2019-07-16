@@ -27,16 +27,16 @@ quizButton.onclick = function() {
 
     const birthPlace = prompt('Is it true that I was born in Austin, TX?');
 
-    if(isYes(birthPlace)) {
-        if(isYes(birthPlace) === 'empty') {
-            alert('You cannot leave a prompt blank! Shame on you!');
-            return;
-        }
-        else if(isYes(birthPlace) === 'error') {
-            alert('You must respond using yes, y, no, n [not case sensitive]');
-            return;
-        }
+    if(isYes(birthPlace) === true) {
         score += 1;
+    }
+    else if(isYes(birthPlace) === 'empty') {
+        alert('You cannot leave a prompt blank! Shame on you!');
+        return;
+    }
+    else if(isYes(birthPlace) === 'error') {
+        alert('You must respond using yes, y, no, n [not case sensitive]');
+        return;
     }
 
     const food = prompt('Is it true that I dispise sushi?');
@@ -53,16 +53,16 @@ quizButton.onclick = function() {
     }
 
     const cat = prompt('Is it true that my girlfriend has a cat named Mochi?');
-    if(isYes(cat)) {
-        if(isYes(cat) === 'empty') {
-            alert('You cannot leave a prompt blank! Shame on you!');
-            return;
-        }
-        else if(isYes(cat) === 'error') {
-            alert('You must respond using yes, y, no, n [not case sensitive]');
-            return;
-        }
+    if(isYes(cat) === true) {
         score += 1;
+    }
+    else if(isYes(cat) === 'empty') {
+        alert('You cannot leave a prompt blank! Shame on you!');
+        return;
+    }
+    else if(isYes(cat) === 'error') {
+        alert('You must respond using yes, y, no, n [not case sensitive]');
+        return;
     }
 
     alert('Thanks for playing! Your results will now be shown at the bottom of the page.');
