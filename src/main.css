@@ -1,10 +1,12 @@
 body{
     background-color: rgb(123, 188, 193);
     font-family: 'EB Garamond', serif;
+    font-size: 18px;
+
 }
 
 #profpic{
-   float: left;
+    float: left;
     
     margin-right:20px;
     object-fit: cover;
@@ -14,7 +16,6 @@ body{
     width: 150px;
     
     padding: 10px;
-
     border: 3px solid rgb(0, 0, 0);
     
 }
@@ -23,7 +24,6 @@ h1{
     color: white;
     font-family: 'Lobster', cursive;
     margin-left: 10px;
-    
     font-size: 40px;
 }
 
@@ -35,11 +35,9 @@ h2{
 
 
 #intro>p{
-    
     margin-top: 20px;
-    
     font-size: 30px;
-    line-height: 2.3;
+    line-height: 2.07;
     color: rgb(0, 0, 0);
     background-color: white;
 }
@@ -55,10 +53,23 @@ h2{
 
 p{
     font-family: 'Lora', serif;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    background-color: white;
 }
 
-li{
-    margin: 4px;
+ul{
+    font-family: 'Lora', serif;
+    margin: 10px 0 10px 0;
+    padding: 10px 30px;
+    background-color: white;
+}
+
+ol{
+    font-family: 'Lora', serif;
+    margin: 10px 0 10px 0;
+    padding: 10px 30px;
+    background-color: white;
 }
 
 .zero{
