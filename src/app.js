@@ -7,8 +7,6 @@ const numberScore = document.getElementById('numberScore');
 
 
 quizButton.onclick = function() {
-    //blank response error message
-
     //Asking user for their name
     const userName = prompt('State your name.');
     if(userName === '') {
