@@ -1,40 +1,33 @@
-body{
+body {
     background-color: rgb(123, 188, 193);
     font-family: 'EB Garamond', serif;
     font-size: 18px;
-
 }
 
-#profpic{
+#profpic {
     float: left;
-    
-    margin-right:20px;
+    margin-right: 20px;
     object-fit: cover;
-    
-
     height: 180px;
     width: 150px;
-    
     padding: 10px;
     border: 3px solid rgb(0, 0, 0);
-    
 }
 
-h1{
+h1 {
     color: white;
     font-family: 'Lobster', cursive;
     margin-left: 10px;
     font-size: 40px;
 }
 
-h2{
+h2 {
     color: white;
-    font-family: 'Lobster',cursive;
+    font-family: 'Lobster', cursive;
     margin: 0px;
 }
 
-
-#intro>p{
+#intro>p {
     margin-top: 20px;
     font-size: 30px;
     line-height: 2.07;
@@ -42,63 +35,56 @@ h2{
     background-color: white;
 }
 
-
-
-.box{
+.box {
     margin: 10px;
     border: 2px solid white;
-    padding:20px;
-    
+    padding: 20px;
 }
 
-p{
+p {
     font-family: 'Lora', serif;
     margin: 10px 0 10px 0;
     padding: 10px;
     background-color: white;
 }
 
-ul{
+ul {
     font-family: 'Lora', serif;
     margin: 10px 0 10px 0;
     padding: 10px 30px;
     background-color: white;
 }
 
-ol{
+ol {
     font-family: 'Lora', serif;
     margin: 10px 0 10px 0;
     padding: 10px 30px;
     background-color: white;
 }
 
-.zero{
+.zero {
     color: red;
 }
 
-.one{
+.one {
     color: orange;
 }
 
-.two{
+.two {
     color: yellow;
 }
 
-.three{
+.three {
     color: rgb(37, 240, 37);
 }
 
-.hidden{
+.hidden {
     visibility: hidden;
 }
 
-#numberScore{
+#numberScore {
     padding: 4px;
     background-color: rgb(44, 69, 70);
     border: 3px solid black;
     font-size: 25px;
 }
-
-
-
-

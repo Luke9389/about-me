@@ -61,7 +61,6 @@ quizButton.onclick = function() {
     const cat = prompt('Is it true that my girlfriend has a cat named Mochi?');
     if(isYes(cat)) {
         if(isYes(cat) === 'error') {
-            console.log('problem');
             alert('You cannot leave a prompt blank! Shame on you!');
             return;
         }
@@ -77,7 +76,9 @@ quizButton.onclick = function() {
     numberScore.classList.remove('two');
     numberScore.classList.remove('three');
     numberScore.classList.remove('hidden');
-    numberScore.textContent = score + '/3';
+
+    //Make score fraction & percentage
+    numberScore.textContent = score + '/3 = ' + Math.floor((score * 100) / 3) + '%';
 
     //Change style of quiz-result class
     if(score === 0) {
