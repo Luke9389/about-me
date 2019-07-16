@@ -5,10 +5,16 @@ function isYes(text) {
     else if(text.toLowerCase() === 'y') {
         return true;
     }
-    else if(text === '') {
-        return 'error';
+    else if(text.toLowerCase() === 'no') {
+        return false;
     }
-    else { return false; }
+    else if(text.toLowerCase() === 'n') {
+        return false;
+    }
+    else if(text === '') {
+        return 'empty';
+    }
+    else { return 'error'; }
 }
 
 export default isYes;

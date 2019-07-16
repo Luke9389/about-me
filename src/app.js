@@ -37,9 +37,12 @@ quizButton.onclick = function() {
     const birthPlace = prompt('Is it true that I was born in Austin, TX?');
 
     if(isYes(birthPlace)) {
-        if(isYes(birthPlace) === 'error') {
-            console.log('problem');
+        if(isYes(birthPlace) === 'empty') {
             alert('You cannot leave a prompt blank! Shame on you!');
+            return;
+        }
+        else if(isYes(birthPlace) === 'error') {
+            alert('You must respond using yes, y, no, n [not case sensitive]');
             return;
         }
         score += 1;
@@ -48,9 +51,12 @@ quizButton.onclick = function() {
     //Question Two
     const food = prompt('Is it true that I dispise sushi?');
     if(!isYes(food)) {
-        if(isYes(food) === 'error') {
-            console.log('problem');
+        if(isYes(food) === 'empty') {
             alert('You cannot leave a prompt blank! Shame on you!');
+            return;
+        }
+        else if(isYes(birthPlace) === 'error') {
+            alert('You must respond using yes, y, no, n [not case sensitive]');
             return;
         }
         score += 1;
@@ -60,8 +66,12 @@ quizButton.onclick = function() {
     //Question Three
     const cat = prompt('Is it true that my girlfriend has a cat named Mochi?');
     if(isYes(cat)) {
-        if(isYes(cat) === 'error') {
+        if(isYes(cat) === 'empty') {
             alert('You cannot leave a prompt blank! Shame on you!');
+            return;
+        }
+        else if(isYes(birthPlace) === 'error') {
+            alert('You must respond using yes, y, no, n [not case sensitive]');
             return;
         }
         score += 1;
@@ -83,7 +93,6 @@ quizButton.onclick = function() {
     //Change style of quiz-result class
     if(score === 0) {
         numberScore.classList.add('zero');
-
     }
     else if(score === 1) {
         numberScore.classList.add('one');
