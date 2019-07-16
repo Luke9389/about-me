@@ -61,6 +61,33 @@ li{
     margin: 4px;
 }
 
+.zero{
+    color: red;
+}
+
+.one{
+    color: orange;
+}
+
+.two{
+    color: yellow;
+}
+
+.three{
+    color: rgb(37, 240, 37);
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#numberScore{
+    padding: 4px;
+    background-color: rgb(44, 69, 70);
+    border: 3px solid black;
+    font-size: 25px;
+}
+
 
 
 

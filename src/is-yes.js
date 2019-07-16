@@ -5,6 +5,9 @@ function isYes(text) {
     else if(text.toLowerCase() === 'y') {
         return true;
     }
+    else if(text === '') {
+        return 'error';
+    }
     else { return false; }
 }
 
