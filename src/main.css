@@ -6,22 +6,23 @@ body{
 #profpic{
    float: left;
     
+    margin-right:20px;
     object-fit: cover;
-    object-position: 0, 0;
+    
 
     height: 180px;
     width: 150px;
     
-    padding-right: 20px;
+    padding: 10px;
 
-    border: 5px;
-    border-color:pink;
+    border: 3px solid rgb(0, 0, 0);
+    
 }
 
 h1{
     color: white;
     font-family: 'Lobster', cursive;
-    padding-left: 30px;
+    margin-left: 10px;
     
     font-size: 40px;
 }
@@ -29,22 +30,36 @@ h1{
 h2{
     color: white;
     font-family: 'Lobster',cursive;
+    margin: 0px;
 }
 
-p,ul,ol{
-    padding: 0px, 10px;
+
+#intro>p{
+    
+    margin-top: 20px;
+    
+    font-size: 30px;
+    line-height: 2.3;
+    color: rgb(0, 0, 0);
     background-color: white;
 }
-.intro{
-    font-size: 30px;
-    line-height: 2.0;
-    color: black;
+
+
+
+.box{
+    margin: 10px;
+    border: 2px solid white;
+    padding:20px;
+    
 }
 
-section{
-    padding-left: 30px;
+p{
+    font-family: 'Lora', serif;
 }
 
+li{
+    margin: 4px;
+}
 
 
 
