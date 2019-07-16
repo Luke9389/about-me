@@ -75,6 +75,8 @@ quizButton.onclick = function() {
         score += 1;
     }
 
+    alert('Thanks for playing! Your results will now be shown at the bottom of the page.');
+
     //#region
     //REACH GOAL: COLOR CODE SCORE
 
