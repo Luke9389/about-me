@@ -17,6 +17,9 @@ let tries = triesDisplay.textContent;
 button.addEventListener('click', () => {
 
     let guess = numberGuess.value;
+    if(guess < 1 || guess > 20) {
+        alert('You may not enter a number less than one or more than 20!');
+    }
 
     tries -= 1;
     changeTC(triesDisplay, tries);
