@@ -11,6 +11,7 @@
             rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora&display=swap"
             rel="stylesheet">
+            
         <title>Document</title>
     </head>
     <body>
@@ -24,30 +25,32 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section id="how-to-play-section">
                 <h2>How to Play</h2>
                 <p>
                     To play the guessing game, you will enter numbers into the
-                    provided box, and then the hint message will tell you if you are too
-                    high, or too low. If you get the number in 4 tries or less, you win. If
+                    provided box, and then the hint message will tell you if you
+                    are too
+                    high, or too low. If you get the number in 4 tries or less,
+                    you win. If
                     not, you lose!
                 </p>
             </section>
-            <section>
+            <section id="guess-section">
                 <h2>Guess a Number!</h2>
                 <input id="number-guess" type="number" min=1 max=20>
                 <button id="submit-guess">Submit Guess</button>
             </section>
-            <section>
-                Number of tries: <span id="numberTries" type="number">4</span>
+            <section id="tries-section">
+               <h2> Number of tries: <span id="numberTries" type="number">4</span></h2>
             </section>
-            <section>
+            <section id="hint-box-section">
                 <h2>Hint Box</h2>
                 <div>
                     Your guess was: <span id="high-low-right"></span>
                 </div>
             </section>
-            <section>
+            <section id="game-result-section">
                 <h2>Game Result</h2>
                 <span id="win-lose-result"></span>
             </section>

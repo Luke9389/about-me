@@ -1,5 +1,8 @@
 import compareNumbers from './compare-numbers.js';
+import changeTC from './changeTC.js';
 
+
+//Reference DOM elements
 const button = document.getElementById('submit-guess');
 const numberGuess = document.getElementById('number-guess');
 const trialMessage = document.getElementById('high-low-right');
@@ -16,29 +19,32 @@ button.addEventListener('click', () => {
     let guess = numberGuess.value;
 
     tries -= 1;
-    triesDisplay.textContent = tries;
+    changeTC(triesDisplay, tries);
 
     if(tries === 0) {
-        gameResult.textContent = 'Ran out of tries!';
+        changeTC(gameResult, 'Ran out of tries!');
         button.disabled = true;
-        gameResult.textContent = 'You Lose...';
+
     }
     let resultTrial = compareNumbers(guess, numberAnswer);
 
     switch(resultTrial) {
         case -1:
-            trialMessage.textContent = 'too low :(';
+            changeTC(trialMessage, 'too low :(');
             break;
 
         case 1:
-            trialMessage.textContent = 'too high :(';
+            changeTC(trialMessage, 'too high :(');
             break;
 
         default:
-            trialMessage.textContent = 'dead on!';
+            changeTC(trialMessage, 'dead on!');
             button.disabled = true;
-            gameResult.textContent = 'You Win!';
+            changeTC(gameResult, 'You Win!');
             break;
     }
 
 });
+
+
+

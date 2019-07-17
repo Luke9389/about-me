@@ -1,0 +1,39 @@
+header>h1 {
+    text-align: left;
+    background-image: url(../assets/TitleBanner.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    padding: 30px 30px 50px 45px;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+    color: white;
+}
+
+
+section, p {
+    background-color: rgb(104, 199, 211);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+#guess-section {
+    background-color: rgb(104, 199, 211);
+    width: 200px;
+}
+
+#tries-section{
+    width: 220px;
+} 
+
+#hint-box-section{
+    width: 220px;
+}
+
+#game-result-section{
+width: 200px;
+}
