@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+}
+
+h1, h2 {
+    color: black;
+}
+
+img {
+    height: 80px;
+    margin: 20px 20px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.chosen{
+    border: 3px solid blue;
+}
+
+/* Reformat rock later, its a bit small...
+#rock {
+    height: 50%;
+} */
+
+input {
+    display: none;
+}
+
+input:checked + .radio-image {
+   
+    border: 3px solid red;
+    border-radius: 5px;
+  
+}

@@ -4,10 +4,13 @@ body {
     font-size: 18px;
 }
 
-nav{
+nav {
     color: white;
     font-family: 'Lobster', cursive;
+}
 
+nav>a {
+    margin: 0px 5px;
 }
 
 h1 {
