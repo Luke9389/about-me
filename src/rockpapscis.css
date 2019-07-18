@@ -19,22 +19,32 @@ img {
     padding: 5px;
 }
 
-.chosen{
+.chosen {
     border: 3px solid blue;
 }
 
-/* Reformat rock later, its a bit small...
-#rock {
-    height: 50%;
-} */
-
-input {
+[type=radio] {
     display: none;
 }
 
-input:checked + .radio-image {
-   
+input:checked+.radio-image {
     border: 3px solid red;
     border-radius: 5px;
-  
+}
+
+#user-choose-section {
+    background-color: rgba(255, 0, 0, 0.187);
+}
+
+#computer-choose-section {
+    background-color: rgba(0, 0, 255, 0.187);
+}
+
+#betting{
+    background-color: rgba(0, 128, 0, 0.379);
+}
+
+#wager{
+    width: 50px;
+    margin-bottom: 50px;
 }

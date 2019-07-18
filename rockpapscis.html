@@ -53,11 +53,12 @@
                             src="/assets/scissors.png">
                     </label>
                 </p>
-                <p>
-                    <button id="throw-button">Throw!</button>
-                </p>
             </section>
+            <p>
+                <button id="throw-button">Throw!</button>
+            </p>
             <section id="computer-choose-section">
+                <h2>Computer Choses</h2>
                 <label>
                     <img id="comp-rock" class="radio-image"
                         src="/assets/SmoothStone.png">
@@ -71,21 +72,24 @@
                         src="/assets/scissors.png">
                 </label>
             </section>
-            <section id="outcome-section">
+            <section id="outcome-section" class="hidden">
                 <p>
                     You chose <span id="message-uc"></span> and the computer
                     chose <span id="message-cc"></span>, which means
-                    you <span id="win-lose"></span>.
+                    you <span id="win-lose"></span>!
                 </p>
-                <p> Wins: <span type="number" id="win-tally">0</span> Losses: <span
+                <p> Wins: <span type="number" id="win-tally">0</span> Losses:
+                    <span
                         type="number" id="loss-tally">0</span> Ties: <span
                         type="number" id="tie-tally">0</span></p>
             </section>
-
-
-
-
-
+            <section id="betting">
+                <h2>Care to Place A Bet?</h2>
+                <p>
+                    You have $<span type="number" id="money-display">20</span>.
+                    Place a wager if you dare: <input id="wager" type="number">
+                </p>
+            </section>
         </main>
         <script type="module" src="src/rockpapscis.js"></script>
     </body>
