@@ -6,11 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- <link rel="stylesheet" href="src/main.css"> -->
         <link rel="stylesheet" href="src/rockpapscis.css">
-        <link
-            href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lora&display=swap"
-            rel="stylesheet">
         <title>Document</title>
     </head>
     <body>
@@ -33,6 +28,7 @@
                     rock, paper, or scissors randomly, and then we see who wins!
                 </p>
             </section>
+
             <section id="user-choose-section">
                 <h2>Choose Your Weapon...</h2>
                 <p>
@@ -53,9 +49,13 @@
                     </label>
                 </p>
             </section>
-            <p>
-                <button id="throw-button">Throw!</button>
-            </p>
+
+            <section id="button-section">
+                <p>
+                    <button id="throw-button">Throw!</button>
+                </p>
+            </section>
+
             <section id="computer-choose-section">
                 <h2>Computer Choses</h2>
                 <label>
@@ -71,6 +71,7 @@
                         src="/assets/scissors.png">
                 </label>
             </section>
+
             <section id="outcome-section" class="hidden">
                 <p>
                     You chose <span id="message-uc"></span> and the computer
@@ -82,10 +83,11 @@
                         type="number" id="loss-tally">0</span> Ties: <span
                         type="number" id="tie-tally">0</span></p>
             </section>
+
             <section id="betting">
                 <h2>Care to Place A Bet?</h2>
                 <p>
-                    You have $<span type="number" id="money-display">20</span>.
+                    You have $<span id="money-display">20</span>.
                     Place a wager if you dare: <input id="wager" type="number">
                 </p>
             </section>

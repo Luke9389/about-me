@@ -25,17 +25,27 @@ throwButton.addEventListener('click', () => {
         alert('You can\'t bet more than you have');
         return;
     }
+    if(isNaN(wager)) {
+        wager = 0;
+    }
 
+    let userThrow = document.querySelector('input:checked').value;
+
+    let computerThrow = getThrow();
+    showComputerThrow(computerThrow);
+
+    updateMessage(computerThrow, userThrow);
+
+    updateTally();
+
+    updateMoney(money, wager);
+});
+
+function showComputerThrow(computerThrow) {
     compPaper.classList.remove('chosen');
     compRock.classList.remove('chosen');
     compScissors.classList.remove('chosen');
 
-    const userChoice = document.querySelector('input:checked');
-    let userThrow = userChoice.value;
-    messageUC.textContent = userThrow;
-
-    let computerThrow = getThrow();
-    messageCC.textContent = computerThrow;
     if(computerThrow === 'scissors') {
         compScissors.classList.add('chosen');
     } else if(computerThrow === 'paper') {
@@ -43,24 +53,33 @@ throwButton.addEventListener('click', () => {
     } else if(computerThrow === 'rock') {
         compRock.classList.add('chosen');
     }
+}
 
+function updateMessage(computerThrow, userThrow) {
+    messageCC.textContent = computerThrow;
+    messageUC.textContent = userThrow;
     winLose.textContent = rpcResult(userThrow, computerThrow);
+}
 
+function updateMoney(money, wager) {
+    if(winLose.textContent === 'lose') {
+        money = money - wager;
+        changeTC(moneyDisplay, money);
+    } else if(winLose.textContent === 'win') {
+        money = money + wager;
+        changeTC(moneyDisplay, money); 
+    }
+}
+
+function updateTally() {
     if(winLose.textContent === 'tied') {
         ties += 1;
         changeTC(tieTally, ties);
     } else if(winLose.textContent === 'lose') {
         losses += 1;
         changeTC(lossTally, losses);
-        money = money - wager;
-        changeTC(moneyDisplay, money);
     } else if(winLose.textContent === 'win') {
         wins += 1;
-        changeTC(winTally, wins);
-        money = money + wager;
-        changeTC(moneyDisplay, money);
+        changeTC(winTally, wins); 
     }
-
-
-});
-
+}

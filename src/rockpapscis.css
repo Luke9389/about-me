@@ -36,6 +36,10 @@ input:checked+.radio-image {
     background-color: rgba(255, 0, 0, 0.187);
 }
 
+#button-section {
+    background-color: white;
+}
+
 #computer-choose-section {
     background-color: rgba(0, 0, 255, 0.187);
 }
