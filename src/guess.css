@@ -6,34 +6,60 @@ header>h1 {
     padding: 30px 30px 50px 45px;
 }
 
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 body {
     background-color: white;
     text-align: center;
     color: white;
 }
 
-
 section, p {
     background-color: rgb(104, 199, 211);
     border-radius: 10px;
-    margin: auto;
+   
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
 
+#how-to-play-section {
+    order: 1;
+    height: 250px;
+}
+
 #guess-section {
+    order: 2;
     background-color: rgb(104, 199, 211);
-    width: 200px;
 }
 
-#tries-section{
-    width: 220px;
-} 
-
-#hint-box-section{
-    width: 220px;
+#tries-section {
+    order: 3;
 }
 
-#game-result-section{
-width: 200px;
+#hint-box-section {
+    order: 4;
+}
+
+#game-result-section {
+    order: 5;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0px;
+    
+    
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    width: 45%;
+    
 }
