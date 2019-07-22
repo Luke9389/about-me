@@ -36,19 +36,34 @@ input:checked+.radio-image {
     background-color: rgba(255, 0, 0, 0.187);
 }
 
+#user-choose-section>h2 {
+    text-align: left;
+}
+
 #button-section {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 #computer-choose-section {
     background-color: rgba(0, 0, 255, 0.187);
 }
 
-#betting{
+#computer-choose-section>h2 {
+    text-align: left;
+}
+
+#betting {
     background-color: rgba(0, 128, 0, 0.379);
 }
 
-#wager{
+#wager {
     width: 50px;
     margin-bottom: 50px;
+}
+
+main {
+    background-image: url("../assets/pokeball.png");
+    background-repeat: no-repeat;
+    background-position: 50% 112px;
+    background-size: 415px;
 }

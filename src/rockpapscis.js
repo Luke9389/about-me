@@ -56,8 +56,18 @@ function showComputerThrow(computerThrow) {
 }
 
 function updateMessage(computerThrow, userThrow) {
-    messageCC.textContent = computerThrow;
-    messageUC.textContent = userThrow;
+    if(computerThrow === 'rock') {
+        changeTC(messageCC, 'bulbasaur');
+    } else if(computerThrow === 'paper') {
+        changeTC(messageCC, 'charmander');
+    } else { changeTC(messageCC, 'squirtle'); }
+
+    if(userThrow === 'rock') {
+        changeTC(messageUC, 'bulbasaur');
+    } else if(userThrow === 'paper') {
+        changeTC(messageUC, 'charmander');
+    } else { changeTC(messageUC, 'squirtle'); }
+
     winLose.textContent = rpcResult(userThrow, computerThrow);
 }
 
@@ -67,7 +77,7 @@ function updateMoney(money, wager) {
         changeTC(moneyDisplay, money);
     } else if(winLose.textContent === 'win') {
         money = money + wager;
-        changeTC(moneyDisplay, money); 
+        changeTC(moneyDisplay, money);
     }
 }
 
@@ -80,6 +90,6 @@ function updateTally() {
         changeTC(lossTally, losses);
     } else if(winLose.textContent === 'win') {
         wins += 1;
-        changeTC(winTally, wins); 
+        changeTC(winTally, wins);
     }
 }
