@@ -1,8 +1,6 @@
 import compareNumbers from './compare-numbers.js';
 import changeTC from './changeTC.js';
 
-
-//Reference DOM elements
 const button = document.getElementById('submit-guess');
 const numberGuess = document.getElementById('number-guess');
 const trialMessage = document.getElementById('high-low-right');
@@ -46,7 +44,6 @@ button.addEventListener('click', () => {
             changeTC(gameResult, 'You Win!');
             break;
     }
-
 });
 
 

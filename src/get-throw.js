@@ -10,13 +10,10 @@ export default function getThrow() {
 }
 
 export function getThrowFromNumber(num) {
-
     if(num < 1) {
         return 'rock';
     } else if(num < 2) {
         return 'paper';
     } else { return 'scissors'; }
-
-
 }
 
