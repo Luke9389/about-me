@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- <link rel="stylesheet" href="src/main.css"> -->
+        <link rel="stylesheet" href="src/rockpapscis.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Rock Paper Scissors
+            </h1>
+            <nav>
+                <a href="./">Home</a>
+                <a href="guess.html">Guessing Game</a>
+                <a href="rockpapscis.html">Rock Paper Scissors</a>
+            </nav>
+        </header>
+        <main>
+            <section id="rules-section">
+                <h2>Rules</h2>
+                <p>
+                    To play the game, select either rock, paper, or scissors,
+                    and then hit the submit button. The computer will throw
+                    rock, paper, or scissors randomly, and then we see who wins!
+                </p>
+            </section>
+
+            <section id="user-choose-section">
+                <h2>Choose Your Weapon...</h2>
+                <p>
+                    <label>
+                        <input type="radio" name="userChoice" value="rock" checked>
+                        <img id="rock" class="radio-image"
+                            src="/assets/SmoothStone.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="userChoice" value="paper">
+                        <img id="paper" class="radio-image"
+                            src="/assets/paper-stack.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="userChoice" value="scissors">
+                        <img id="scissors" class="radio-image"
+                            src="/assets/scissors.png">
+                    </label>
+                </p>
+            </section>
+
+            <section id="button-section">
+                <p>
+                    <button id="throw-button">Throw!</button>
+                </p>
+            </section>
+
+            <section id="computer-choose-section">
+                <h2>Computer Choses</h2>
+                <label>
+                    <img id="comp-rock" class="radio-image"
+                        src="/assets/SmoothStone.png">
+                </label>
+                <label>
+                    <img id="comp-paper" class="radio-image"
+                        src="/assets/paper-stack.png">
+                </label>
+                <label>
+                    <img id="comp-scissors" class="radio-image"
+                        src="/assets/scissors.png">
+                </label>
+            </section>
+
+            <section id="outcome-section" class="hidden">
+                <p>
+                    You chose <span id="message-uc"></span> and the computer
+                    chose <span id="message-cc"></span>, which means
+                    you <span id="win-lose"></span>!
+                </p>
+                <p> Wins: <span type="number" id="win-tally">0</span> Losses:
+                    <span
+                        type="number" id="loss-tally">0</span> Ties: <span
+                        type="number" id="tie-tally">0</span></p>
+            </section>
+
+            <section id="betting">
+                <h2>Care to Place A Bet?</h2>
+                <p>
+                    You have $<span id="money-display">20</span>.
+                    Place a wager if you dare: <input id="wager" type="number">
+                </p>
+            </section>
+        </main>
+        <script type="module" src="src/rockpapscis.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    background-color: white;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+}
+
+h1, h2 {
+    color: black;
+}
+
+img {
+    height: 80px;
+    margin: 20px 20px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.chosen {
+    border: 3px solid blue;
+}
+
+[type=radio] {
+    display: none;
+}
+
+input:checked+.radio-image {
+    border: 3px solid red;
+    border-radius: 5px;
+}
+
+#user-choose-section {
+    background-color: rgba(255, 0, 0, 0.187);
+}
+
+#button-section {
+    background-color: white;
+}
+
+#computer-choose-section {
+    background-color: rgba(0, 0, 255, 0.187);
+}
+
+#betting{
+    background-color: rgba(0, 128, 0, 0.379);
+}
+
+#wager{
+    width: 50px;
+    margin-bottom: 50px;
+}

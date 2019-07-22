@@ -1,0 +1,40 @@
+#profpic {
+    float: left;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: 50% 35%;
+    height: 180px;
+    width: 150px;
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+#intro>p {
+    font-size: 30px;
+    line-height: 2.07;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.zero {
+    color: red;
+}
+
+.one {
+    color: orange;
+}
+
+.two {
+    color: yellow;
+}
+
+.three {
+    color: rgb(37, 240, 37);
+}
+
+#numberScore {
+    padding: 4px;
+    background-color: rgb(44, 69, 70);
+    border: 3px solid black;
+    font-size: 25px;
+}
