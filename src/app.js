@@ -4,6 +4,8 @@ const scoreMessage = document.getElementById('quiz-result');
 const quizButton = document.getElementById('quiz-button');
 const numberScore = document.getElementById('numberScore');
 
+let score = 0;
+
 quizButton.onclick = function() {
 
     const userName = prompt('State your name.');
@@ -22,8 +24,6 @@ quizButton.onclick = function() {
     if(!confirmQuiz) {
         return;
     }
-
-    let score = 0;
 
     const birthPlace = prompt('Is it true that I was born in Austin, TX?');
 
@@ -67,25 +67,37 @@ quizButton.onclick = function() {
 
     alert('Thanks for playing! Your results will now be shown at the bottom of the page.');
 
-    numberScore.classList.remove('zero');
-    numberScore.classList.remove('one');
-    numberScore.classList.remove('two');
-    numberScore.classList.remove('three');
-    numberScore.classList.remove('hidden');
+    clearScore();
 
+    displayScore(userName, userHomeland, score);
+};
+
+function clearScore() {
+    numberScore.classList.remove('red');
+    numberScore.classList.remove('orange');
+    numberScore.classList.remove('yellow');
+    numberScore.classList.remove('green');
+    numberScore.classList.remove('hidden');
+}
+
+function displayScore(userName, userHomeland, score) {
     numberScore.textContent = score + '/3 = ' + Math.floor((score * 100) / 3) + '%';
 
-    if(score === 0) {
-        numberScore.classList.add('zero');
-    }
-    else if(score === 1) {
-        numberScore.classList.add('one');
-    }
-    else if(score === 2) {
-        numberScore.classList.add('two');
-    }
-    else { numberScore.classList.add('three'); }
+    setScoreColor();
 
     scoreMessage.textContent = 'Ok ' + userName + ' of ' + userHomeland +
         ', your score is...';
-};
+}
+
+function setScoreColor() {
+    if(score === 0) {
+        numberScore.classList.add('red');
+    }
+    else if(score === 1) {
+        numberScore.classList.add('orange');
+    }
+    else if(score === 2) {
+        numberScore.classList.add('yellow');
+    }
+    else { numberScore.classList.add('green'); }
+}
